@@ -322,6 +322,15 @@ footer h1{
 }
 
 @media screen and (max-width: 680px){
+    .navbar .max-width{
+        flex-direction: column;
+    }
+    .navbar .menu{
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     section{
         padding: 20px 0;
     }
