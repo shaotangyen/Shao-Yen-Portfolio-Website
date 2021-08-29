@@ -295,6 +295,7 @@ footer h1{
 @media screen and (max-width: 1140px){
     .project .project-content .box{
         width: 33.33%;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -311,10 +312,12 @@ footer h1{
 
     .skill .skill-content .box{
         width: 50%;
+        transition: all 0.5s ease-in-out;
     }
     
     .project .project-content .box{
         width: 50%;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -343,10 +346,12 @@ footer h1{
 
     .skill .skill-content .box{
         width: 100%;
+        transition: all 0.5s ease-in-out;
     }
     
     .project .project-content .box{
         width: 100%;
+        transition: all 0.5s ease-in-out;
     }
 
     .project .project-content .box img{
@@ -363,5 +368,6 @@ footer h1{
     .contact .contact-content .box{
         width: 100%;
         padding-bottom: 20px;
+        transition: all 0.5s ease-in-out;
     }
 }
