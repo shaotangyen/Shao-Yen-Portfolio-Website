@@ -183,12 +183,12 @@ html{
     border-radius: 10px;
     background-color: var(--unique-tertiary-color);
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease;
 }
 
 .skill .skill-content .box:hover h2{
     font-size:1.8rem;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease;
     
 }
 
@@ -210,7 +210,7 @@ html{
     width: 100%;
     position: relative;
     padding: 20px 0;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .project .project-content-latest .box img{
@@ -236,7 +236,7 @@ html{
 
 .project .project-content-latest .box:hover{
     font-size: 1.1rem;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
     
 }
 
@@ -266,7 +266,7 @@ html{
     position: relative;
     padding: 20px 0;
     
-    transition: all 1s ease;
+    transition: 0.5 ease;
 }
 
 .project .project-content .box img{
@@ -380,7 +380,6 @@ footer h1{
     
     .project .project-content .box{
         width: 33.33%;
-        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -397,12 +396,10 @@ footer h1{
 
     .skill .skill-content .box{
         width: 50%;
-        transition: all 0.5s ease-in-out;
     }
     
     .project .project-content-latest .box h2{
         left: 20%;
-        transition: all 0.5s ease-in-out;
     }
 
     .project .project-content-latest .box img{
@@ -412,7 +409,6 @@ footer h1{
 
     .project .project-content .box{
         width: 50%;
-        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -450,7 +446,7 @@ footer h1{
 
     .skill .skill-content .box{
         width: 100%;
-        transition: all 0.5s ease-in-out;
+        
     }
     
     .project .project-content-latest .box img{
@@ -460,12 +456,12 @@ footer h1{
 
     .project .project-content-latest .box h2{
         left: 30%;
-        transition: all 0.5s ease-in-out;
+        
     }
 
     .project .project-content .box{
         width: 100%;
-        transition: all 0.5s ease-in-out;
+        
     }
 
     .project .project-content .box img{
@@ -474,12 +470,9 @@ footer h1{
 
     .project .project-content img:hover{
         border-radius: 50px;
-        cursor:pointer;
-        z-index: 1;
     }
     .contact .contact-content .box{
         width: 100%;
         padding-bottom: 20px;
-        transition: all 0.5s ease-in-out;
     }
 }
