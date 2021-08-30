@@ -237,18 +237,20 @@ html{
 .project .project-content-latest .box:hover{
     font-size: 1.1rem;
     transition: all 0.5s ease;
+    
 }
 
 .project .project-content-latest .box:hover h2{
     border-radius: 5px;
     background-color: var(--unique-tertiary-color);    
-    
+    cursor:pointer;
 }
 
 .project .project-content-latest .box:hover img{
     border-radius: 50px;
     border-color: var(--unique-tertiary-color);
     filter:opacity(70%);
+    cursor:pointer;
 }
 
 .project .project-content{
@@ -294,14 +296,15 @@ html{
 
 .project .project-content .box:hover h2{
     border-radius: 5px;
-    background-color: var(--unique-tertiary-color);    
-    
+    background-color: var(--unique-tertiary-color);
+    cursor:pointer;
 }
 
 .project .project-content .box:hover img{
     border-radius: 50px;
     border-color: var(--unique-tertiary-color);
     filter:opacity(70%);
+    cursor:pointer;
 }
 
 /* Contact Me Section */
