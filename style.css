@@ -41,13 +41,7 @@ html{
     scroll-behavior: smooth;
 }
 
-a{
-    color:var(--unique-tertiary-color);
-}
 
-a:hover{
-    color:var(--unique-tertiary-color);
-}
 
 /* navigation Bar */
 
@@ -178,21 +172,85 @@ a:hover{
     transition: 0.5s ease;
 }
 
-.skill .skill-content .box img:hover{
+.skill .skill-content .box:hover img{
     opacity: 0.5;
     border-radius: 50px;
 }
 
 .skill .skill-content .box h2{
     position: absolute;
-    
     padding: 5px 20px;
     border-radius: 10px;
     background-color: var(--unique-tertiary-color);
     color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.skill .skill-content .box:hover h2{
+    font-size:1.8rem;
+    transition: 0.5s ease-in-out;
+    
 }
 
 /* Project Section */
+
+.project a{
+    color:#fff;
+}
+
+.project .project-content-latest{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project .project-content-latest .box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.project .project-content-latest .box img{
+    height: 500px;
+    width: 1100px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    border: 5px solid var(--unique-secondary-color);
+    
+}
+
+.project .project-content-latest .box h2{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    background-color: var(--unique-secondary-color);
+    color: white;
+    z-index: 2;
+}
+
+.project .project-content-latest .box:hover{
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.project .project-content-latest .box:hover h2{
+    border-radius: 5px;
+    background-color: var(--unique-tertiary-color);    
+    
+}
+
+.project .project-content-latest .box:hover img{
+    border-radius: 50px;
+    border-color: var(--unique-tertiary-color);
+    filter:opacity(70%);
+}
+
 .project .project-content{
     margin: auto;
     display: flex;
@@ -205,6 +263,8 @@ a:hover{
     width: 25%;
     position: relative;
     padding: 20px 0;
+    
+    transition: all 1s ease;
 }
 
 .project .project-content .box img{
@@ -227,16 +287,25 @@ a:hover{
     z-index: 2;
 }
 
-.project .project-content img:hover{
+.project .project-content .box:hover{
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+}
+
+.project .project-content .box:hover h2{
+    border-radius: 5px;
+    background-color: var(--unique-tertiary-color);    
+    
+}
+
+.project .project-content .box:hover img{
     border-radius: 50px;
     border-color: var(--unique-tertiary-color);
-    cursor:pointer;
-    height: 450px;
-    width: 270px;
-    z-index: 1;
+    filter:opacity(70%);
 }
 
 /* Contact Me Section */
+
 .contact .contact-content{
     margin: auto;
     display: flex;
@@ -274,6 +343,14 @@ a:hover{
     padding-top: 10px;
 }
 
+.contact a{
+    color:var(--unique-tertiary-color);
+}
+
+.contact a:hover{
+    color:var(--unique-tertiary-color);
+}
+
 /* Footer Section */
 footer{
     width: 100%;
@@ -293,6 +370,11 @@ footer h1{
 
 /* responsive media query */
 @media screen and (max-width: 1140px){
+    .project .project-content-latest .box img{
+        height: 500px;
+        width: 900px;
+    }
+    
     .project .project-content .box{
         width: 33.33%;
         transition: all 0.5s ease-in-out;
@@ -315,6 +397,16 @@ footer h1{
         transition: all 0.5s ease-in-out;
     }
     
+    .project .project-content-latest .box h2{
+        left: 20%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .project .project-content-latest .box img{
+        height: 400px;
+        width: 600px;
+    }
+
     .project .project-content .box{
         width: 50%;
         transition: all 0.5s ease-in-out;
@@ -332,7 +424,7 @@ footer h1{
         justify-content: center;
     }
     section{
-        padding: 20px 0;
+        padding:90px 0 0 0;
     }
 
     .about .about-content .content-left{
@@ -358,6 +450,16 @@ footer h1{
         transition: all 0.5s ease-in-out;
     }
     
+    .project .project-content-latest .box img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .project .project-content-latest .box h2{
+        left: 30%;
+        transition: all 0.5s ease-in-out;
+    }
+
     .project .project-content .box{
         width: 100%;
         transition: all 0.5s ease-in-out;
@@ -370,8 +472,6 @@ footer h1{
     .project .project-content img:hover{
         border-radius: 50px;
         cursor:pointer;
-        height: 300px;
-        width: 300px;
         z-index: 1;
     }
     .contact .contact-content .box{
