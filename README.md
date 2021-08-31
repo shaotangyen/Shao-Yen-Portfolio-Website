@@ -38,11 +38,11 @@ Adding a footer so it looks more like a real website.
 
 Desktop screenshot:
 
-![Desktop screenshot](.\images\readme\full-size-screenshot.jpg)
+![Desktop screenshot](./images/readme/full-size-screenshot.jpg)
 
 Mobile screenshot:
 
-<img src=".\images\readme\small-size-screenshot.jpg" width="200">
+<img src="./images/readme/small-size-screenshot.jpg" width="200">
 
 
 ---
