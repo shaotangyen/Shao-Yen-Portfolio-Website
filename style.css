@@ -162,6 +162,7 @@ html{
     width: 33.33%;
     position: relative;
     padding: 20px 0;
+    transition: 0.5s ease-in-out;
 }
 
 .skill .skill-content .box img{

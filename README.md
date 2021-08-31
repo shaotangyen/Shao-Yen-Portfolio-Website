@@ -29,3 +29,22 @@ When you resize the page or view the site on different screens or sizes, the res
 ## The Footer sections
 
 Adding a footer so it looks more like a real website.
+
+## Link to the website
+
+[Click here to open the site](https://shaotangyen.github.io/Shao-Yen-Portfolio-Website/)
+
+## Screenshots
+
+Desktop screenshot:
+
+![](.\images\readme\full-size-screenshot.jpg)
+
+Mobile screenshot:
+
+<img src=".\images\readme\small-size-screenshot.jpg" width="200">
+
+
+---
+
+Created by Shao Yen @ 2021
