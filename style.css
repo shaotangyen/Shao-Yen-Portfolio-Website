@@ -208,7 +208,7 @@ html{
 .project .project-content-latest .box{
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin: auto;
     position: relative;
     padding: 20px 0;
     transition: 0.5s ease;
@@ -224,11 +224,10 @@ html{
     
 }
 
-.project .project-content-latest .box h2{
+.project .project-content-latest .box .project-content-title{
     position: absolute;
     top: 60%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    left: -1%;
     padding: 5px 10px;
     background-color: var(--unique-secondary-color);
     color: white;
@@ -241,10 +240,20 @@ html{
     
 }
 
-.project .project-content-latest .box:hover h2{
+.project .project-content-latest .box:hover .project-content-title{
     border-radius: 5px;
     background-color: var(--unique-tertiary-color);    
     cursor:pointer;
+}
+
+.project .project-content-latest .box .project-content-github{
+    position: absolute;
+    bottom: 10%;
+    right: -2%;
+    padding: 3px 5px;
+    background-color: var(--unique-secondary-color);
+    color: white;
+    z-index: 2;
 }
 
 .project .project-content-latest .box:hover img{
@@ -254,20 +263,28 @@ html{
     cursor:pointer;
 }
 
+.project .project-content-latest .box:hover .project-content-github{
+    border-radius: 5px;
+}
+
+.project .project-content-latest .project-content-github:hover {
+    background-color: var(--unique-tertiary-color);
+    cursor:pointer;
+}
+
 .project .project-content{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .project .project-content .box{
     display: flex;
     justify-content: center;
-    width: 25%;
+    margin: 0px 20px;
     position: relative;
     padding: 20px 0;
-    
-    transition: 0.5 ease;
 }
 
 .project .project-content .box img{
@@ -279,12 +296,22 @@ html{
     border: 5px solid var(--unique-secondary-color);
 }
 
-.project .project-content .box h2{
+.project .project-content .box .project-content-title{
     position: absolute;
     top: 60%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    left: -2%;
+    width: min-content;
     padding: 5px 10px;
+    background-color: var(--unique-secondary-color);
+    color: white;
+    z-index: 2;
+}
+
+.project .project-content .box .project-content-github{
+    position: absolute;
+    bottom: 10%;
+    right: -2%;
+    padding: 3px 5px;
     background-color: var(--unique-secondary-color);
     color: white;
     z-index: 2;
@@ -295,8 +322,17 @@ html{
     transition: all 0.5s ease;
 }
 
-.project .project-content .box:hover h2{
+.project .project-content .box:hover .project-content-title{
     border-radius: 5px;
+    background-color: var(--unique-tertiary-color);
+    cursor:pointer;
+}
+
+.project .project-content .box:hover .project-content-github{
+    border-radius: 5px;
+}
+
+.project .project-content .project-content-github:hover {
     background-color: var(--unique-tertiary-color);
     cursor:pointer;
 }
@@ -321,7 +357,7 @@ html{
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 33.33%;
+    width: 20%;
 }
 
 .contact .contact-content .box h2{
@@ -379,9 +415,11 @@ footer h1{
         width: 900px;
     }
     
-    .project .project-content .box{
-        width: 33.33%;
+    .contact .contact-content .box{
+        width: 50%;
+        padding-bottom: 20px;
     }
+    
 }
 
 @media screen and (max-width: 1000px){
@@ -406,10 +444,6 @@ footer h1{
     .project .project-content-latest .box img{
         height: 400px;
         width: 600px;
-    }
-
-    .project .project-content .box{
-        width: 50%;
     }
 }
 
@@ -460,11 +494,6 @@ footer h1{
         
     }
 
-    .project .project-content .box{
-        width: 100%;
-        
-    }
-
     .project .project-content .box img{
         height: 250px;
     }
@@ -472,6 +501,7 @@ footer h1{
     .project .project-content img:hover{
         border-radius: 50px;
     }
+
     .contact .contact-content .box{
         width: 100%;
         padding-bottom: 20px;
